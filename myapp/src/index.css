@@ -61,7 +61,7 @@
     @apply mt-20;
 
     & ul {
-      @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
+      @apply flex flex-row overflow-x-auto gap-5 -mt-10 w-full hide-scrollbar;
     }
 
     & ul li {
@@ -85,7 +85,7 @@
     }
 
     & img {
-      @apply absolute left-2 h-5 w-5 ms-65 mt-2.5;
+      @apply absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5;
     }
 
     & input {
