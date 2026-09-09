@@ -140,6 +140,87 @@
       @apply text-gray-100 font-medium text-base;
     }
   }
+
+  .movie-details {
+    @apply mt-10 pb-20;
+
+    & .back-link {
+      @apply inline-block text-light-200 hover:text-white mb-6;
+    }
+
+    & .backdrop {
+      @apply w-full max-h-[420px] object-cover rounded-2xl mb-8 opacity-80;
+    }
+
+    & .details-content {
+      @apply flex flex-col sm:flex-row gap-8;
+    }
+
+    & .poster {
+      @apply w-[240px] rounded-2xl mx-auto sm:mx-0 shrink-0 object-cover;
+    }
+
+    & .info {
+      @apply flex-1;
+    }
+
+    & .info h1 {
+      @apply text-left mx-0 text-3xl sm:text-4xl;
+    }
+
+    & .tagline {
+      @apply italic text-gray-100 mt-2;
+    }
+
+    & .info .content {
+      @apply mt-4 flex flex-row items-center flex-wrap gap-2;
+    }
+
+    & .info .rating {
+      @apply flex flex-row items-center gap-1;
+    }
+
+    & .info .rating img {
+      @apply size-4 object-contain;
+    }
+
+    & .info .rating p {
+      @apply font-bold text-base text-white;
+    }
+
+    & .info .rating span {
+      @apply font-normal text-gray-100;
+    }
+
+    & .info .content span {
+      @apply text-sm text-gray-100;
+    }
+
+    & .info .content .lang {
+      @apply capitalize text-gray-100 font-medium text-base;
+    }
+
+    & .info .content .year,
+    & .info .content .runtime {
+      @apply text-gray-100 font-medium text-base;
+    }
+
+    & .genres {
+      @apply flex flex-row flex-wrap gap-2 mt-4;
+    }
+
+    & .genres li {
+      @apply bg-light-100/5 text-light-200 text-sm px-3 py-1 rounded-lg;
+    }
+
+    & .info h2 {
+      @apply mt-6 text-xl sm:text-2xl;
+    }
+
+    & .overview {
+      @apply mt-2 text-gray-100 max-w-3xl leading-relaxed;
+    }
+  }
 }
 
 @utility text-gradient {
